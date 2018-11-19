@@ -18,17 +18,70 @@ html {
 }
 
 
-.action-btn {
+.action-btn,
+.transparent-action-btn {
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-    background-color: #fff;
-    color: #000;
     text-decoration: none;
     padding: 1rem 2rem;
     border-radius: 0.4rem;
 }
 
+.action-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.transparent-action-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.action-btn,
+.transparent-action-btn {
+    position: relative;
+    z-index: 1;
+}
+
+.action-btn:hover {
+    color: #fff;
+}
+
+.transparent-action-btn:hover {
+    color: #000;
+    border: none;
+}
+
+.action-btn:hover:before,
+.transparent-action-btn:hover:before {
+    transform: scaleX(1);
+}
+
+.action-btn:before,
+.transparent-action-btn:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    z-index: -1;
+    transform-origin: 0% 100%;
+    transition: transform 0.3s;
+    border-radius: 0.4rem;
+}
+
+.action-btn:before {
+    background: #333;
+}
+
+.transparent-action-btn:before {
+    background: #fff;
+}
 
 
 /*********************************
@@ -132,16 +185,20 @@ html {
     width: 32%;
     height: 32%;
 }
-
-.small-image-wrapper:hover > img{
-    position: absolute;
-    top: 0px;
-    left: 50%;
-}
-
-.small-image-wrapper img {
+.small-image {
     width: 100%;
     height: auto;
+    position: relative;
+}
+
+.small-image-animate {
+}
+
+.small-image-nomral {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0%;
 }
 
 
@@ -274,9 +331,6 @@ html {
 #buy-link {
     width: 29%;
     display: inline-block;
-    background-color: transparent;
-    color: #fff;
-    border: 3px solid #fff;
     font-size: 1.2rem;
 }
 
@@ -345,9 +399,6 @@ html {
 #testimonial-link {
     margin-top: 3rem;
     margin-bottom: 7rem;
-    background-color: transparent;
-    border: 3px solid #fff;
-    color: #fff;
 }
 
 /*********************************
@@ -471,5 +522,9 @@ html {
         margin: 0 auto;
         display: block;
         width: 40%;
+    }
+
+    #small-images-wrapper {
+        width: 100%;
     }
 }
