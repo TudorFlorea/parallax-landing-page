@@ -115,8 +115,35 @@ html {
 *********************************/
 
 #image-galery {
-    height: 600px;
 }
+
+#gallery-wrapper {
+    width: 100%;
+    position: relative;
+    margin: 4rem auto;
+}
+
+#small-images-wrapper {
+    width: 50%;
+}
+
+.small-image-wrapper {
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+}
+
+.small-image-wrapper:hover > img{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+.small-image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
 
 /*********************************
 * Reservation section
@@ -390,15 +417,25 @@ html {
     #buy-heading {
         display: block;
         margin: 1rem auto;
+        text-align: center;
+        width: 100%;
     }
 
     #buy-link {
         display: block;
-        margin: 1rem auto;
+        margin: 1.5rem auto;
+        width: 80%;
     }
 
     #testimonial-card-wrapper {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #footer-wrapper {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -408,6 +445,7 @@ html {
     }
     .info-card {
         flex-basis: 100%;
+        margin: 1rem auto;
     }
 
     #support-wrapper {
@@ -421,7 +459,8 @@ html {
         margin: 0 auto;
     }
 
-    #nav-list {
+    #support-content {
+        margin: 1rem auto;
     }
 
     .nav-list-item {
