@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fixed-container {
+    max-width: 1024px;
+    min-width: 350px;
+    width: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
+
+.action-btn {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+}
+
+
+
+/*********************************
+* Heading section
+*********************************/
+
+#nav {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem; 
+}
+
+#logo{
+    width: 8rem;
+    height: auto;
+}
+
+#nav-list a {
+    margin: 10px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*********************************
+* Video section
+*********************************/
+
+#video-bg {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,0.6));
+}
+
+
+#video {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1));
+}
+
+#video-bg-heading,
+#video-bg-subheading {
+    text-align: center;
+    color: #fff;
+}
+
+#video-bg-heading {
+    margin-top: 10rem;
+    font-size: 3.5rem;
+}
+
+#video-bg-subheading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+#video-bg-link {
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+}
+
+/*********************************
+* Image galery section
+*********************************/
+
+#image-galery {
+    height: 600px;
+}
+
+/*********************************
+* Reservation section
+*********************************/
+
+#reservation-section {
+    text-align: center;
+    background-image: url("./media/nature-bg-3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#reservation-heading {
+    margin-top: 10rem;
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 3px 3px #000;
+}
+
+#reservation-subheading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+#reservation-link {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+/*********************************
+* Info section
+*********************************/
+
+#info-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.info-card {
+    padding: 20px;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info-img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.info-heading {
+    font-size: 2rem;
+}
+
+/*********************************
+* Support section
+*********************************/
+#support-section {
+    background-image: url("./media/nature-bg-2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    color: #fff;
+}
+
+#support-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#support-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#support-content {
+    flex-basis: 70%;
+}
+
+#support-content h1 {
+    font-size: 2rem;
+}
+
+#support-content p {
+    font-size: 1rem;
+}
+
+#support-image-wrapper {
+    flex-basis: 30%;
+}
+
+#support-image {
+    width: 100%;
+    height: auto;
+}
+
+/*********************************
+* Buy section
+*********************************/
+#buy-section {
+    background-image: linear-gradient(90deg,#55BCE9, #84C452);
+    width: 100%;
+    padding: 3rem 0;
+}
+
+#buy-now-wrapper {
+    width: 100%;
+}
+
+#buy-heading {
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+#buy-link {
+    width: 29%;
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 1.2rem;
+}
+
+
+/*********************************
+* Testimonial section
+*********************************/
+
+#testimonial-section {
+    text-align: center;
+    
+    background-image: url("./media/nature-bg-2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    
+    color: #fff;
+}
+
+#testimonial-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#testimonial-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+#testimonial-heading {
+    margin: 3rem auto;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.testimonial-card {
+    margin: 1rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.testimonial-image {
+    display: block;
+    margin: 0.5rem auto;
+    border-radius: 50%;
+    width: 40%;
+}
+
+.testimonial-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.testimonial-position {
+    margin: 0.6rem auto;
+    color: #A39690;
+}
+
+#testimonial-link {
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+/*********************************
+* Footer section
+*********************************/
+#footer {
+    color: #fff;
+    background-color: #272725;
+
+}
+
+#footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 0;
+    align-content: center;
+}
+
+#copyrigth-info {
+    padding: 15px 0;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+}
+
+#social p {
+    padding: 15px 0;
+}
+
+.social-item {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 0.5rem;
+}
+
+.social-item:hover {
+    background-color: #049C9D;
+}
+
+.social-image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .fixed-container {
+        padding: 0 5%;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    #info-cards-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .info-card {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #buy-heading {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    #buy-link {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    #testimonial-card-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav-wrapper {
+        flex-direction: column;
+    }
+    .info-card {
+        flex-basis: 100%;
+    }
+
+    #support-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #nav-list {
+    }
+
+    .nav-list-item {
+        flex-basis: 100%;
+    }
+
+    #support-image {
+        margin: 0 auto;
+        display: block;
+        width: 40%;
+    }
+}
